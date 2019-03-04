@@ -3,9 +3,14 @@ class App extends React.Component {
         alert("you clicked the title");
     }
     render() {
-        return React.createElement("div", {},
-            React.createElement('h1', { onClick: this.handleTitleClick }, 'arquivei')
-    )
+        return React.createElement("div", {}, [
+            React.createElement("header", { onClick: this.handleTitleClick }, 'arquivei'),
+            React.createElement("cnpj-container", {}, "seu CNPJ"),
+            React.createElement("line",{},"_"),
+            React.createElement("title",{},"hi"),
+            React.createElement(table,{},"1"),
+            React.createElement("experimente",{}, "hello world"),
+        ]);
     }
 }
 

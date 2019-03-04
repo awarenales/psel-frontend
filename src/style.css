@@ -19,8 +19,11 @@
 	header {
 		width: inherit;
 		height: 80px;
-		background-color: #006eb9;
-	}
+        background-color: #006eb9;
+        text-align: center;
+        padding: 20px;
+        font-size: 40px;
+    }
 	
 	.cnpj-container {
 		padding: 24px;
