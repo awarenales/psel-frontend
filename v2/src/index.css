@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "ProximaNovaSoft";
+  src: url(./)
+}
+
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
+    font: 14px "ProximaNovasSoft", Futura, sans-serif;
     margin: 20px;
   }
   
