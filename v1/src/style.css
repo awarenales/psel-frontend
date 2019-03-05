@@ -1,0 +1,73 @@
+	@font-face {
+		font-family: "ProximaNovaSoft";
+        src: url(./ProximaNovaSoft-Regular.otf);
+        src: url(./ProximaNovaSoft-Bold.otf);
+	}
+    
+* {
+    box-sizing: border-box;
+    color: #7e878f;
+    margin: auto;
+    font-family: "ProximaNovaSoft", sans-serif;
+}
+
+    body {
+        background-color: #ffffff;
+        margin: 0;
+    }
+	
+	header {
+		width: inherit;
+		height: 80px;
+        background-color: #006eb9;
+        text-align: center;
+        padding: 20px;
+        font-size: 40px;
+    }
+	
+	.cnpj-container {
+		padding: 24px;
+		font-size: 12px;
+	}
+	
+	.line {
+		width: 100%;
+		border-bottom: solid 1px #efefef;
+	}
+	
+	.title {
+		padding: 32px;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		color: #026dba;
+	}
+	
+	table {
+		margin-bottom: 56px;
+		max-width: 1267px;
+		height: 116px;
+		border: 1px solid #dddddd;
+		border-collapse: collapse;
+	}
+	
+	th, td {
+		border-right: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+	
+	th {
+		height: 66px;
+	}
+	
+	tr:nth-child(even) {background-color: #f9f9f9;}
+	
+	.experimente {
+		max-width: 686px;
+		height: 154px;
+		padding: 32px;
+		border-radius: 8px;
+		background-color: #ededed;
+		text-align: center;
+    }
