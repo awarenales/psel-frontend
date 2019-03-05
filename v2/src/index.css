@@ -1,12 +1,22 @@
 @font-face {
   font-family: "ProximaNovaSoft";
-  src: url(ProximaNovaSoft-Bold.otf);
-  src: url(ProximaNovaSoft-Regular.otf);
+  src: url(ProximaNovaSoft/ProximaNovaSoft-Regular.otf);
+  src: url(ProximaNovaSoft/ProximaNovaSoft-Bold.otf);
+}
+
+.header {
+  height: 80px;
+  background-color: #006eb9;
+}
+
+.logo {
+  height: 40px;
 }
 
 body {
     font: 14px "ProximaNovaSoft", Futura, sans-serif;
     margin: 20px;
+    background-color: #ffffff;
   }
   
   ol, ul {
