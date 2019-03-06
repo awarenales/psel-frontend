@@ -2,9 +2,20 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import logo from './logo_branco.png';
+import Actions from './actions';
+import Popup from './modal';
+import Button from 'react-bootstrap/Button';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = { modalShow: false };
+  }
+
   render() {
+    let modalClose = () => this.setState({ modalShow: true });
+
     return (
       <div className="App">
         <Header />
@@ -13,6 +24,10 @@ class App extends Component {
         <Title />
         <Table />
         <Invite />
+        <Popup
+          show={this.state.modalShow}
+          onHide={modalClose}
+         />
       </div>
     );
   }
@@ -25,6 +40,7 @@ class Header extends Component {
           <a
             href="https://arquivei.com.br"
             target="_blank"
+            rel="noopener noreferrer"
           >
           <img src={logo} className="header-logo" alt="logo Arquivei" />
           </a>
@@ -65,6 +81,7 @@ class Table extends Component {
   render() {
     return (
         <table className="container-table">
+          <thead>
           <tr>
             <th>Status</th>
             <th>Número</th>
@@ -74,6 +91,8 @@ class Table extends Component {
             <th>CNPJ</th>
             <th>Ação</th>
           </tr>
+          </thead>
+          <tbody>
           <tr>
             <td>
               <div className="label-status">
@@ -86,20 +105,10 @@ class Table extends Component {
             <td>R$974,00</td>
             <td>10.101.010/1010-10</td>
             <td>
-              <tr>
-                <td>
-                <div className="button-action" onClick={() => alert('click')}>
-                <i class="fas fa-eye"/> Ver Nota
-                </div>
-              </td>
-              <td>
-                <div className="button-action" onClick={() => alert('click')}>
-                <i class="fas fa-download"/> Baixar XML
-                </div>
-                </td>
-                </tr>
-              </td>
+              <Actions />
+            </td>
           </tr>
+          </tbody>
         </table>
     );
   }
@@ -109,11 +118,12 @@ class Invite extends Component {
   render() {
     return (
         <div className="container-invite">
-          Você pode ter as notas de <b>todos os seus fornecedores</b>, que ter acesso a elas?
+          Você pode ter as notas de <b>todos os seus fornecedores</b>, quer ter acesso a elas?
           <b>Experimente grátis o Arquivei</b> e tenha todas suas notas diretamente da <b>Sefaz</b>
-          <div className="button-invite" onClick={() => alert('click')}>
+          <Button className="button-invite"
+          onClick={() => Popup.setState({modalShow: true})}>
             Experimentar o Arquivei
-          </div>
+          </Button>
         </div>
     );
   }
