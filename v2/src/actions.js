@@ -17,13 +17,13 @@ class Actions extends Component {
       <tr>
           <td style={tdStyle}>
               <Button className="button-action" onClick={() => alert('click')}>
-                  <i class="fas fa-eye"/> Ver Nota
+                  <i className="fas fa-eye"/> Ver Nota
               </Button>
           </td>
           <td style={tdFill}/>
           <td style={tdStyle}>
               <Button className="button-action" onClick={() => alert('click')}>
-                  <i class="fas fa-download"/> Baixar XML
+                  <i className="fas fa-download"/> Baixar XML
               </Button>
           </td>
       </tr>

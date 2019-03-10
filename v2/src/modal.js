@@ -1,54 +1,26 @@
 import React, { Component } from 'react';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import ReactModal from 'react-modal';
+import './modal';
 
-class Popup extends Component {
-constructor(props, context) {
-    super(props, context);
+ReactModal.setAppElement('#main');
 
-    this.handleShow = this.handleShow.bind(this);
-    this.handleClose = this.handleClose.bind(this);
+class MyModal extends Component {
 
-    this.state = {
-        show: false,
-    };
+  render () {
+    return (
+      <div>
+        <button onClick={this.handleOpenModal()}>Trigger Modal</button>
+        <ReactModal 
+           isOpen={this.props.showModal}
+           contentLabel="Minimal Modal Example"
+           centered
+        >
+          Hello world!
+          <button onClick={this.handleCloseModal}>Close Modal</button>
+        </ReactModal>
+      </div>
+    );
+  }
 }
 
-handleClose() {
-    this.setState({show: false});
-}
-
-handleShow() {
-    this.setState({show: true});
-}
-
-    render() {
-        return (
-<Modal
-    centered
-    show = {this.state.show}
-    onHide={this.handleClose}
->
-  <Modal.Header>
-    <Modal.Title>Experimente grátis o Arquivei</Modal.Title>
-  </Modal.Header>
-
-  <Modal.Body>
-    <p>Com o Arquivei, você terá acesso a todas as notas dos seus fornecedores, além de:
-
-• Consulta de seus XMLs direto da Sefaz;
-• Alerta de notas canceladas;
-• Conhecimento de notas indevidas/frias;
-
-Tudo isso grátis e sem compromisso.</p>
-  </Modal.Body>
-
-  <Modal.Footer>
-    <Button variant="primary">Experimentar agora</Button>
-  </Modal.Footer>
-</Modal>
-        );
-    }
-}
-
-export default Popup;
+export default MyModal;
