@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './header.css'
+import './index.css'
 import logo from './logo_branco.png';
 
-class Header extends Component {
+export class Header extends Component {
     render() {
       return (
-        <div className="App-header">          
+        <h1>          
             <a
               href="https://arquivei.com.br"
               target="_blank"
@@ -17,9 +17,7 @@ class Header extends Component {
                 alt="logo Arquivei"
               />
             </a>
-          </div>
+          </h1>
       );
     }
   }
-
-  export default Header;

@@ -1,0 +1,109 @@
+.container-invite {
+  font-size: 18px;
+  max-width: 686px;
+  border-radius: 8px;
+  background-color: #ededed;
+  margin: auto;
+  margin-top: 56px;
+  padding: 32px;
+}
+  
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 32px;
+  border: 1px solid #888;
+  width: 500px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: ProximaNovaSoft;
+  font-size: 14px;
+  color: #7e878f;
+  position: relative;
+  text-align: center;
+  line-height: 1.57;
+}
+
+.modal-title {
+  font-family: ProximaNovaSoft;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #2074ba;
+}
+
+.modal-close-btn {
+  font-size: 14px;
+  color: #b3b3b4;
+  background-color: #ffffff;
+  border: none;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  cursor: pointer;
+}
+
+.modal-try-btn {
+  background-color: #2074ba;
+  font-family: ProximaNovaSoft;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0.89;
+  color: #ffffff;
+  border-style: none;
+  padding: 12px;
+  border-radius: 4px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.progress-bar {
+  position: relative;
+  height: 20px;
+  width: 350px;
+  border-radius: 50px;
+  border: 1px solid #333;
+}
+
+.filler {
+  background: #1DA598;
+  height: 100%;
+  border-radius: inherit;
+  transition: width .2s ease-in;
+}
+
+button {
+	font-family: inherit;
+  color: #ffffff;
+  padding: 8px;
+	border-radius: 4px;
+	cursor: pointer;
+  text-align: center;
+	border-style: none;
+	font-weight: bold;
+  background-color: #2074ba;
+}
+
+.button-invite {
+  font: 14px;
+  background-color: #47c661;
+  font-weight: 600;
+}
+
+a {
+	color: #006eb9;
+	text-decoration: none;
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "ProximaNovaSoft";
+  font-weight: normal;
+  src: url(./scenes/PngLanding/components/Fonts/ProximaNovaSoft/ProximaNovaSoft-Regular.otf);
+}
+
+@font-face {
+  font-family: "ProximaNovaSoft";
+  font-weight: bold;
+  src: url(./scenes/PngLanding/components/Fonts/ProximaNovaSoft/ProximaNovaSoft-Bold.otf);
+}
+
+.wrapper {
+  display: flex;  
+  flex-flow: column wrap;
+}
+
+/* all items inside should be 100% width, via flex-basis */
+.wrapper > * {
+  flex: 1 100%;
+}
