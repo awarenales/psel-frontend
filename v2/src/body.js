@@ -1,19 +1,20 @@
 import React, {Component} from 'react';
 import './body.css';
 import Actions from "./actions";
+import ReactModal from 'react-modal';
 
 class Body extends Component {
     render() {
         return (
             <div className="body">
-        <Cnpj />
-        <div className="line" />
-        <Title />
-        <Table />
-        <Invite />
-        </div>
+                <Cnpj />
+                <div className="line" />
+                <Title />
+                <Table />
+                <Invite />
+            </div>
         );
-        }
+    }
 }
 
 class Cnpj extends Component {
@@ -80,16 +81,45 @@ class Cnpj extends Component {
       );
     }
   }
+
+  ReactModal.setAppElement('#main');
+
   class Invite extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {showModal: false};
+
+      this.handleOpenModal = this.handleOpenModal.bind(this);
+      this.handleCloseModal = this.handleCloseModal.bind(this);
+    }
+
+  handleOpenModal () {
+    this.setState({ showModal: true });
+  }
+  
+  handleCloseModal () {
+    this.setState({ showModal: false });
+  }
+
     render() {
       return (
           <div className="container-invite">
             Você pode ter as notas de <b>todos os seus fornecedores</b>, quer ter acesso a elas?
             <b>Experimente grátis o Arquivei</b> e tenha todas suas notas diretamente da <b>Sefaz</b>
-            <button className="button-invite"
-            onClick= {() => this.handleOpenModal}>
-              Experimentar o Arquivei
-            </button>
+            <div>
+        <button onClick={this.handleOpenModal} className= "button-invite">
+          Experimentar Arquivei
+          </button>
+        <ReactModal
+            //className="modal-content"
+            //overlayClassName="modal"      
+            isOpen={this.state.showModal}
+            contentLabel="Experimentar Arquivei"
+            centered
+            >Hello1 world!
+            <button onClick={this.handleCloseModal}>Close Modal</button>
+        </ReactModal>
+        </div>
           </div>
       );
     }

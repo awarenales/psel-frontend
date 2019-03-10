@@ -16,13 +16,13 @@ class Actions extends Component {
       return (
       <tr>
           <td style={tdStyle}>
-              <Button className="button-action" onClick={() => alert('click')}>
+              <Button className="button-action" onClick={() => alert('Você acessou a visualizacao da nota.')}>
                   <i className="fas fa-eye"/> Ver Nota
               </Button>
           </td>
           <td style={tdFill}/>
           <td style={tdStyle}>
-              <Button className="button-action" onClick={() => alert('click')}>
+              <Button className="button-action" onClick={() => alert('Você pediu download da nota.')}>
                   <i className="fas fa-download"/> Baixar XML
               </Button>
           </td>
