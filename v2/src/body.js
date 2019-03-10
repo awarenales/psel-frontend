@@ -82,7 +82,7 @@ class Cnpj extends Component {
     }
   }
 
-  ReactModal.setAppElement('#main');
+  ReactModal.setAppElement('#root');
 
   class Invite extends Component {
     constructor(props) {
@@ -111,13 +111,41 @@ class Cnpj extends Component {
           Experimentar Arquivei
           </button>
         <ReactModal
-            //className="modal-content"
-            //overlayClassName="modal"      
+            className="modal-content"
+            overlayClassName="modal"      
             isOpen={this.state.showModal}
             contentLabel="Experimentar Arquivei"
-            centered
-            >Hello1 world!
-            <button onClick={this.handleCloseModal}>Close Modal</button>
+            onRequestClose={this.handleCloseModal}
+            shouldCloseOnOverlayClick={true}
+            >
+                <div className="modal-title">Experimente grátis o Arquivei <span role="img" aria-label="Party Popper">🎉</span></div>
+                
+                <button
+                    onClick={this.handleCloseModal}
+                    className="modal-close-btn">
+                        <i className="fas fa-hand-middle-finger"></i>
+                </button>
+                
+                <div style={{"margin-top": "24px", "margin-bottom":"32px", "text-align":"left"}}>
+                    <p>Com o <b>Arquivei</b>, você terá acesso a <b>todas as notas</b> dos seus fornecedores, além de:</p>
+
+                    <p>• <b>Consulta</b> de seus <b>XMLs</b> direto da <b>Sefaz</b>;<br></br>
+                    • <b>Alerta</b> de notas <b>canceladas</b>;<br></br>
+                    • <b>Conhecimento</b> de notas <b>indevidas/frias</b>;</p>
+
+                    <p><b>Tudo</b> isso <b>grátis</b> e sem compromisso.</p>
+                </div>
+
+                <button
+                    onClick={this.handleCloseModal}
+                    className="modal-try-btn">
+                    Experimentar agora
+                </button>
+            
+                <div style={{"margin-top": "40px"}}>
+                    <p>Ao continuar, você aceita o <a href="https://app.arquivei.com.br/termos" target="_blank"
+              rel="noopener noreferrer">Termo de uso do Arquivei</a>.</p>
+                </div>
         </ReactModal>
         </div>
           </div>
