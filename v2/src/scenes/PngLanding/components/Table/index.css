@@ -1,0 +1,36 @@
+.container {
+	justify-content: center;
+	display: flex;
+	flex-flow: column;
+	margin: 32px;
+}
+
+.cell {
+	display: flex;
+	flex: 1 100%;
+	margin-top: -1px;
+	margin-right: -1px;
+	border: solid 1px #dddddd;
+	padding: 16px;
+	width: 274px;
+}
+
+.cell-header {
+	display: flex;
+	flex: 1 100%;
+}
+
+.cell-row {
+	display: flex;
+	flex: 1 100%;
+	background-color: #f9f9f9;
+}
+
+.label-status {
+    border-radius: 4px;
+    background-color: #a2e2b1;
+    font-size: 12px;
+    font-weight: bold;
+    color: #699975;
+    padding: 4px;
+}

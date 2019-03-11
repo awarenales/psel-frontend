@@ -24,10 +24,10 @@ handleCloseModal () {
   render() {
 	return (
 		<div className="container-invite">
-		  Você pode ter as notas de <b>todos os seus fornecedores</b>, quer ter acesso a elas?
+		  Você pode ter as notas de <b>todos os seus fornecedores</b>, quer ter acesso a elas?<br></br>
 		  <b>Experimente grátis o Arquivei</b> e tenha todas suas notas diretamente da <b>Sefaz</b>
 		  <div>
-	  <button onClick={this.handleOpenModal} className= "button-invite" label="Experimentar Arquivei">Experimentar Arquivei</button>
+	  <button onClick={this.handleOpenModal} style={{'margin-top': '16px'}} className= "button-invite" label="Experimentar Arquivei">Experimentar Arquivei</button>
 	  <ReactModal
 	  	centered
 		  className="modal-content"

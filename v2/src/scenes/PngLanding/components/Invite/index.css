@@ -1,11 +1,12 @@
 .container-invite {
   font-size: 18px;
-  max-width: 686px;
   border-radius: 8px;
   background-color: #ededed;
   margin: auto;
   margin-top: 56px;
-  padding: 32px;
+	padding: 32px;
+	display: block;
+	text-align: center;
 }
   
 /* The Modal (background) */

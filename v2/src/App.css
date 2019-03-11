@@ -11,11 +11,5 @@
 }
 
 .wrapper {
-  display: flex;  
-  flex-flow: column wrap;
-}
-
-/* all items inside should be 100% width, via flex-basis */
-.wrapper > * {
-  flex: 1 100%;
+		display: flex;
 }
