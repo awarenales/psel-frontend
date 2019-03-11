@@ -1,3 +1,21 @@
+Nao foram feitos e/ou implementados:
+
+##### **API simulada e comunicacao API x frontend**
+  Motivo: dificuldade com ferramentas
+  
+##### **PG3**
+  Motivo: dificuldade com modal e barra de status, acabei preferindo comecar a aprender sobre API do que continuar aprendendo elemntos para PG3
+  
+##### **JEST**
+  Motivo: nao evoluí na API, entao nao comecei com os testes. Existe um criado por default pelo create-react-app
+  
+##### **Dockerfile**
+  Motivo: deixei para o final. Por nao ter terminado outros itens mais importantes, nao cheguei nele. Nao sei o que é
+
+##### **Readme**
+  Motivo: idem dockerfile. Os readme disponiveis sao os default do create-react-app
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
