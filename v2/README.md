@@ -50,21 +50,21 @@ It's simple and straigthforward, what makes it easy to understand and quick to i
 More on [https://www.mocky.io/](https://www.mocky.io/).
 
 The generated urls were:
-for initial-state: http://www.mocky.io/v2/5c85c03d340000d40289bcbb
-for migration-success: http://www.mocky.io/v2/5c8857992f0000c100ec9134
-for migration-failure: http://www.mocky.io/v2/5c8857c62f00005a00ec9135
+* for initial-state: http://www.mocky.io/v2/5c85c03d340000d40289bcbb
+* for migration-success: http://www.mocky.io/v2/5c8857992f0000c100ec9134
+* for migration-failure: http://www.mocky.io/v2/5c8857c62f00005a00ec9135
 
 ## Other relevant documentations
 
-#####[Complete Guide to Flexbox on CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)
+####[Complete Guide to Flexbox on CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)
 Some elements were styled with flexbox to allow better adjusting to screen, in varying sizes. For example, the table and header containers. Flexbox offered some simple properties for centering and stretching elements as needed.
 
-#####React Modal component
+####React Modal component
 For PG2 and PG3, I decided to use a modal component, so I wouldn't have to code it from scratch.
 
 I found a zillion options to create modals and dialogs with ReactJS, it took me a while to figure them all out. react-modal from reactcommunity.org was chosen for being simple. It didn't take a lot to install, and it has a "Minimal" example with the minimum setting possible to make it work. It's all I needed.
 
 More about it, how to install and examples can be found on [https://reactcommunity.org/react-modal/](https://reactcommunity.org/react-modal/)
 
-#####Zeplin
+####Zeplin
 App screens designs can be found on [Processo Seletivo Front Project](https://app.zeplin.io/project/5bb7c1c76a3029956fff0624)
