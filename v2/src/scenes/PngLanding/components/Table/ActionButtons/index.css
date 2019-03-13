@@ -1,4 +1,6 @@
+/*a flex container here helps the buttons adjust spaces inside the cell better than a block display*/
 .btn-wrapper {
 	display: flex;
-	align-content: space-between;
+	justify-content: space-evenly;
+	align-content: center;
 }

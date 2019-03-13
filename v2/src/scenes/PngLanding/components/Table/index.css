@@ -7,7 +7,7 @@
 
 .cell {
 	display: flex;
-	flex: 1 100%;
+	justify-content: left;
 	margin-top: -1px;
 	margin-right: -1px;
 	border: solid 1px #dddddd;
@@ -17,20 +17,23 @@
 
 .cell-header {
 	display: flex;
-	flex: 1 100%;
 }
 
 .cell-row {
 	display: flex;
-	flex: 1 100%;
+	align-content: center;
+	justify-content: flex-start;
 	background-color: #f9f9f9;
 }
 
 .label-status {
-    border-radius: 4px;
-    background-color: #a2e2b1;
-    font-size: 12px;
-    font-weight: bold;
-    color: #699975;
-    padding: 4px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+  border-radius: 4px;
+  background-color: #a2e2b1;
+  font-size: 12px;
+  font-weight: bold;
+	color: #699975;
+	padding: 6px;
 }

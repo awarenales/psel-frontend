@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
-import './index.css';
+import './index.css'; // style
+import { Actions } from './ActionButtons';
 
 var rowHeader = ['Status','Número', 'Emissão','Fornecedor','Valor','CNPJ','Ação'];
-var rowValues = ['status', 'number', 'emissionDate', 'emitterXNome', 'value', 'emitterCNPJ', 'prettylittlebuttons']
+
+// values from api should go here
+var rowValues = [<div className='label-status'>AUTORIZADO</div>, 'number', 'emissionDate', 'emitterXNome', 'value', 'emitterCNPJ', <Actions />]
 
 function Cell(props) {
   return (
@@ -13,6 +16,8 @@ function Cell(props) {
 }
 
 export class Table extends Component {
+
+	// ideally, cells would have also an id to identify each one of them after rendering
   renderCell(i) {
     return <Cell value={i} />;
   }

@@ -1,1 +1,2 @@
-trailing comma removed from initial-state.json line 41 due to problem related by vscode.
+trailing comma removed from initial-state.json line 41
+vscode related it as a problem

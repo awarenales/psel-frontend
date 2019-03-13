@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ReactModal from 'react-modal';
 import './modal';
 
+// Minimal modal example from reactcommunity.org
+
 ReactModal.setAppElement('#main');
 
 class MyModal extends Component {

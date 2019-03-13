@@ -71,19 +71,28 @@
   cursor: pointer;
 }
 
-.progress-bar {
-  position: relative;
-  height: 20px;
-  width: 350px;
-  border-radius: 50px;
-  border: 1px solid #333;
+.loadingGif {
+	width: inherit;
+	margin-bottom: 16px;
 }
 
+.status-bar {
+	width: inherit;
+  border-radius: 50px;
+	border: none;
+	width: 100%;
+	height: 7px;
+	border-radius: 4px;
+	background-color: #a5c7e3;
+	margin-top: 16px;
+}
+
+/* fix */
 .filler {
-  background: #1DA598;
+  background: #2074ba;
   height: 100%;
   border-radius: inherit;
-  transition: width .2s ease-in;
+  transition: width 2s linear 1s;
 }
 
 button {
