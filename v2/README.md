@@ -67,4 +67,4 @@ I found a zillion options to create modals and dialogs with ReactJS, it took me 
 More about it, how to install and examples can be found on [https://reactcommunity.org/react-modal/](https://reactcommunity.org/react-modal/)
 
 ### Zeplin
-App screens designs can be found on [Processo Seletivo Front Project](https://app.zeplin.io/project/5bb7c1c76a3029956fff0624)
+App screens designs can be found on [Processo Seletivo Frontend Project](https://app.zeplin.io/project/5bb7c1c76a3029956fff0624)
